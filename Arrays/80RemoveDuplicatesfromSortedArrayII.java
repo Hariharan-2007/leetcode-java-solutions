@@ -18,7 +18,6 @@ class Solution {
                 nums[left++]=val;
                 count=1;
             }
-        }
-        return left;
+        }        return left;
     }
 }
