@@ -25,26 +25,28 @@ class Solution {
         //     return false;
         // }
 
-        while(n>0){
-            if(s.equals(goal)){
-                return true;
-            }else{
-                 StringBuilder str = new StringBuilder(s);
-                    char c = str.charAt(0);
-                str.deleteCharAt(0);
-                str.append(c);
-                s=str.toString();
-                n--;
+        // while(n>0){
+        //     if(s.equals(goal)){
+        //         return true;
+        //     }else{
+        //          StringBuilder str = new StringBuilder(s);
+        //             char c = str.charAt(0);
+        //         str.deleteCharAt(0);
+        //         str.append(c);
+        //         s=str.toString();
+        //         n--;
                 
-            }
-        }
-        if(s.equals(goal)){
+        //     }
+        // }
+        // if(s.equals(goal)){
             
-                return true;
-            }
-        else{
-            return false;
-        }
+        //         return true;
+        //     }
+        // else{
+        //     return false;
+        // }
+
+        return (s+s).contains(goal);
 
     }
 }
