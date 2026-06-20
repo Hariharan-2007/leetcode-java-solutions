@@ -18,7 +18,7 @@ class Solution {
         int left = 0;
         int right = s.length()-1;
         StringBuilder str = new StringBuilder(s);
-        boolean check = false;
+        
         while(left<right){
             if(str.charAt(left)==str.charAt(right)){
                 left++;
