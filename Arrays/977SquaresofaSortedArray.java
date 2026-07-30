@@ -22,6 +22,8 @@ class Solution {
                 right--;
             }
             pos--;
+
+            
         }
         return arr;
     }
