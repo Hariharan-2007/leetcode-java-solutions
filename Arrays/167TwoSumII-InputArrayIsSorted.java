@@ -13,6 +13,7 @@ class Solution {
 
             }else if(numbers[left]+numbers[right]==target){
                 return new int[]{left+1,right+1};
+                
             }
         }
         return new int[]{};
