@@ -7,6 +7,7 @@ class Solution {
         // }
         // Arrays.sort(arr);
         // return arr;
+        
         int n = nums.length;
         int left =0;
         int right =n-1;
@@ -14,17 +15,16 @@ class Solution {
         while(left<=right){
             int leftsq = nums[left]*nums[left];
             int rightsq = nums[right]*nums[right];
-            if(leftsq>rightsq){
-                arr[pos]=leftsq;
-                left++;
-            }else{
+            if(leftsq<rightsq){
                 arr[pos]=rightsq;
                 right--;
+            }else {
+                arr[pos]=leftsq;
+                left++;
             }
             pos--;
-
-            
         }
+
         return arr;
     }
 }
