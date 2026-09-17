@@ -27,3 +27,14 @@ class Solution {
         return n;
     }
 }
+
+
+class Solution {
+    public int singleNumber(int[] nums) {
+        int n =0;
+        for(int val:nums){
+            n^=val;
+        }
+        return n;
+    }
+}
