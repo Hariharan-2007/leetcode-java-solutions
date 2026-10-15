@@ -1,13 +1,24 @@
+// class Solution {
+//     public int removeElement(int[] nums, int val) {
+//         int left =0;
+//         for(int i=0;i<nums.length;i++){
+//             if(nums[i]!=val){
+//                 nums[left++]=nums[i];
+//             }else{
+//                 continue;
+//             }
+//         }
+//         return left;
+//     }
+// }
 class Solution {
     public int removeElement(int[] nums, int val) {
-        int left =0;
+        int start=0;
         for(int i=0;i<nums.length;i++){
             if(nums[i]!=val){
-                nums[left++]=nums[i];
-            }else{
-                continue;
+                nums[start++]=nums[i];
             }
         }
-        return left;
+        return start;
     }
 }
